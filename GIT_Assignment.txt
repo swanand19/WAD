@@ -1,0 +1,54 @@
+$ git config username "swanand19"
+$ git config user.email "swanand19ingale@gmail.com"
+$ git init -b main
+$ git add *
+$ git commit -m "First abc commit"
+[main (root-commit) df9f739] First abc commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 abc.txt
+$ git push origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 222 bytes | 222.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/swanand19/WAD.git
+ * [new branch]      main -> main
+$ git checkout -b main2
+$ git status
+On branch main2
+$ git add def.txt
+$ git commit -m "Commited def.txt file to branch main2"
+[main2 c5b32a2] Commited def.txt file to branch main2
+ 1 file changed, 1 insertion(+)
+ create mode 100644 def.txt
+$ git push origin main2
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 295 bytes | 295.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'main2' on GitHub by visiting:
+remote:      https://github.com/swanand19/WAD/pull/new/main2
+remote:
+To https://github.com/swanand19/WAD.git
+ * [new branch]      main2 -> main2
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+$ git merge main2
+Updating df9f739..c5b32a2
+Fast-forward
+ def.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 def.txt
+$ git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 295 bytes | 295.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/swanand19/WAD.git
+   df9f739..c5b32a2  main -> main
